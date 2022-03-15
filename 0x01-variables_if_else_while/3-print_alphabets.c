@@ -1,18 +1,18 @@
 #include <stdio.h>
- /** * main - prints the alphabet in lowercase,
- * followed by a new line, except q and e
- * Return: Aways 0 (Sucess)
+#include <unistd.h>
+/**
+ * main - Entry point
+ * Description: prints the alphabet in lowercase\n
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char ch = 'a'; 	while (ch <= 'z')
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (ch != 'e' && ch != 'q')
-		{
-			putchar(ch);
-		}
-		ch++;
+		putchar(ch);
 	}
 	putchar('\n');
-	return (0);
+return (0);
 }
